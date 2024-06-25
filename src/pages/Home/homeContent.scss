@@ -1,0 +1,142 @@
+.content {
+  width: calc(100% - 200px);
+  padding: 56px 69px 0 56px;
+  &__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e8e8e8;
+    position: relative;
+    cursor: pointer;
+    &:hover,
+    &.active {
+      background: #4dd599;
+      border: 2px solid #4dd599;
+      &:before {
+        content: url("../../components/assets/img/Vector.svg");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 52px;
+  }
+  &__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #64c4ed;
+  }
+  &__edit {
+    cursor: pointer;
+    &:hover {
+      svg {
+        fill: black;
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+  }
+  &__item {
+    display: flex;
+    column-gap: 15px;
+    max-width: 415px;
+    align-items: center;
+    position: relative;
+    &:hover{
+        .content__item-del{
+            display: block;
+        }
+    }
+    &-del{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:hover{
+            svg{
+                fill: black;
+            }
+        }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 21px;
+    &-icon {
+      cursor: pointer;
+    }
+    &-text {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.15px;
+      color: #b4b4b4;
+    }
+  }
+  &__add {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 16px;
+    &-field {
+      padding: 8px 14px;
+      max-width: 415px;
+      height: 38px;
+      background: #ffffff;
+      border: 1px solid #efefef;
+      border-radius: 4px;
+    }
+    &-actions{
+        display: flex;
+        column-gap: 9px;
+    }
+    &-btn {
+      background: #4dd599;
+      border-radius: 4px;
+      padding: 10px 20px;
+      border: 0;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.15px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    &-close{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: #9C9C9C;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: 0;
+        cursor: pointer;
+    }
+  }
+}

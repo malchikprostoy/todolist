@@ -1,0 +1,47 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"login": "bobur",
+			"email": "w123.@gmail.com",
+			"categories": [
+				{
+					"id": 11234,
+					"categoryName": "Front-End",
+					"task": [
+						{
+							"taskTitle": "Изучить реакт",
+							"id": 123456789,
+							"isComplete": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"email": "bob@gmail.com",
+			"password": "$2a$10$FD1e.SK4qlHGVvSOLYYi7uY8J6PROJRFF9xi8BE.IGnDTkp9nQlmm",
+			"login": "bob",
+			"categories": [
+				{
+					"categoryName": "FrontEnd",
+					"id": "5db63d6d-49fc-44ee-a9da-cca3ec9a60a3",
+					"color": "grey",
+					"task": [
+						{
+							"taskTitle": "HTML",
+							"id": "732fb2e1-ba2b-455b-969b-b32227e03037",
+							"isComplete": false
+						},
+						{
+							"taskTitle": "CSS",
+							"id": "5f91ba1c-6a5d-4fbd-a3cf-1ceea93279bc",
+							"isComplete": false
+						}
+					]
+				}
+			],
+			"id": 3
+		}
+	]
+}
